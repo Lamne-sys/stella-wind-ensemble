@@ -1,0 +1,254 @@
+
+/* =========================
+   STELLAR WIND ENSEMBLE
+   Main Design
+========================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #101d3a;
+  color: #e8edf7;
+  font-family: "Georgia", "Noto Serif JP", serif;
+  line-height: 1.8;
+}
+
+/* HEADER */
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 7%;
+  border-bottom: 1px solid #52617d;
+  background: #101d3a;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.logo-mark {
+  color: #a9d5ff;
+  font-size: 25px;
+}
+
+nav {
+  display: flex;
+  gap: 28px;
+}
+
+nav a {
+  color: #dce8f7;
+  text-decoration: none;
+  font-size: 12px;
+  letter-spacing: 2px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #8dbce2;
+}
+
+/* HERO */
+
+.hero {
+  min-height: 600px;
+  padding: 140px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background:
+    radial-gradient(ellipse at center, #263d68 0%, #101d3a 70%);
+}
+
+.hero-subtitle {
+  color: #a9d5ff;
+  letter-spacing: 5px;
+  font-size: 12px;
+}
+
+.hero h1 {
+  font-size: clamp(36px, 7vw, 76px);
+  line-height: 1.2;
+  letter-spacing: 5px;
+  font-weight: normal;
+  margin: 20px 0;
+}
+
+.hero-tagline {
+  letter-spacing: 3px;
+  font-size: 16px;
+}
+
+.hero-button {
+  margin-top: 35px;
+  padding: 12px 38px;
+  border: 1px solid #a9d5ff;
+  color: #e8edf7;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-size: 12px;
+  transition: 0.3s;
+}
+
+.hero-button:hover {
+  background: #a9d5ff;
+  color: #101d3a;
+}
+
+/* CONTENT */
+
+.content-section {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 100px 30px;
+  border-bottom: 1px solid #52617d;
+}
+
+.section-label {
+  color: #a9d5ff;
+  font-size: 12px;
+  letter-spacing: 4px;
+}
+
+.content-section h2 {
+  font-size: 30px;
+  font-weight: normal;
+  margin: 15px 0 25px;
+}
+
+.content-section p {
+  color: #c6d0df;
+}
+
+.coming-soon {
+  margin-top: 30px;
+  color: #a9d5ff !important;
+  letter-spacing: 2px;
+  font-size: 12px;
+}
+
+/* FOOTER */
+
+footer {
+  padding: 35px 20px;
+  text-align: center;
+  color: #aebbd0;
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+  .site-header {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  nav {
+    gap: 18px;
+  }
+
+  .hero {
+    min-height: 500px;
+    padding: 80px 15px;
+  }
+
+  .hero-tagline {
+    font-size: 13px;
+  }
+
+  .content-section {
+    padding: 70px 25px;
+  }
+}
+
+/* EMBLEM */
+
+.hero-emblem {
+  width: 180px;
+  height: auto;
+  display: block;
+  margin: 0 auto 35px;
+  filter: drop-shadow(0 0 12px rgba(169, 213, 255, 0.2));
+}
+/* NEWS */
+.news-item {
+  margin-top: 30px;
+  padding: 20px;
+  border-left: 2px solid #8dbce2;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.news-date {
+  color: #8dbce2;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+}
+
+/* FAQ */
+.faq-item {
+  margin-top: 25px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #52617d;
+}
+
+.faq-item h3 {
+  color: #c6d0df;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+/* POLICY */
+.policy-item {
+  margin-top: 28px;
+  padding-left: 18px;
+  border-left: 2px solid #8dbce2;
+}
+
+.policy-item h3 {
+  color: #8dbce2;
+  font-size: 0.95rem;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+/* CONTACT */
+.contact-item {
+  margin-top: 28px;
+  padding: 18px 20px;
+  border-left: 2px solid #8dbce2;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.contact-item h3 {
+  color: #8dbce2;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+}
+
+.contact-item a {
+  color: #e8edf7;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.contact-item a:hover {
+  color: #8dbce2;
+  text-decoration: underline;
+}
